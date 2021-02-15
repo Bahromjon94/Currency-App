@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="16dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_currency_flag_img"
+        android:layout_width="32dp"
+        android:layout_height="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/usa" />
+
+    <TextView
+        android:id="@+id/item_currency_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/item_currency_flag_img"
+        app:layout_constraintTop_toTopOf="@id/item_currency_flag_img"
+        tools:text="USD" />
+
+    <TextView
+        android:id="@+id/item_currency_full_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/item_currency_flag_img"
+        tools:text="AQSH Dollari"
+        app:layout_constraintTop_toBottomOf="@id/item_currency_name_text"
+        android:layout_marginHorizontal="12dp"/>
+
+    <TextView
+        android:id="@+id/item_currency_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_currency_name_text"
+        app:layout_constraintTop_toTopOf="@id/item_currency_name_text"
+        tools:text="10540.85" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
